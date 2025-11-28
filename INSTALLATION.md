@@ -33,7 +33,10 @@ nano droid.py
 
 ```bash    
 python droid.py    
-```    
+```
+
+K propojení jednotlivých uzlů doporučuji použít VPN Tailscale, nebo ZeroTierOne, protože projekt zatím nemá implementované peer discovery, ani šifrování P2P komunikace.
+   
 ---    
 
 # Instalace Blockchain Exploreru    
