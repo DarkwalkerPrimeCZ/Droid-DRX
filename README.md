@@ -33,7 +33,7 @@ Tato kryptoměna je inspirovaná Bitcoinem a Ethereem, i když je blíže starš
 
 ## Upozornění ⚠️
 
-Projekt je ve fázi Alpha a **není určen pro produkční použití**. V současné fázi je nutné používat VPN Tailscale, nebo ZeroTierOne pro bezpečný provoz.
+Projekt je ve fázi Alpha a **není určen pro produkční použití**. V současné fázi doporučuji používat VPN Tailscale, nebo ZeroTierOne pro bezpečný provoz.
 
 ## Instalace
 
