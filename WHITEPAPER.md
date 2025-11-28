@@ -20,8 +20,6 @@ Proto se zrodil Droid (DRX) – kryptoměna, která není jen další hračkou, 
 
 # Technické specifikace systému Droid (DRX Blockchain)
 
-## 1. Úvod
-
 ### 1.1 Popis systému
 Droid je decentralizovaný blockchainový systém implementovaný v jazyce Python, navržený pro simulaci kryptoměny s tickerem "DRX". Systém podporuje těžbu bloků pomocí Proof-of-Work (PoW), vytváření a validaci transakcí, P2P synchronizaci mezi uzly, správu peněženek a ukládání dat v databázích SQLite. Cílem je poskytnout jednoduchou, bezpečnou a rozšiřitelnou platformu pro experimenty s blockchainovou technologií.
 
