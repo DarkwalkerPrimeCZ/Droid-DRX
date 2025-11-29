@@ -18,3 +18,17 @@ Dochází k zastavení mineru v případě přijetí bloku od jiného uzlu, i kd
 ALLOW_EMPTY_BLOCKS = False
 
 Dochází k zastavení mineru v případě přijetí bloku od jiného uzlu, i když by i v takovém případě měl miner pokračovat dál v těžbě, dokud jsou transakce v mempoolu, nebo ho uživatel ručně neukončí pomocí kláves CTRL+C
+
+Logická chyba:
+
+If self.get_last_block().hash != self.get_last_block().hash:
+
+Stručné vysvětlení:
+ * Co to je za chybu?
+   * Podmínka porovnává aktuální hash posledního bloku se sebou samým.
+   * Tato podmínka je matematicky vždy nepravdivá (X != X je vždy False).
+
+ * Co způsobuje?
+   * Tato podmínka měla sloužit jako kontrola, zda mezitím, co miner těžil, nepřišel nový blok od jiného uzlu sítě.
+   * Protože je vždy False, kontrola nikdy nezachytí nový blok, který mezitím přišel, a miner tak pokračuje v těžbě na zastaralém/neplatném bloku (na starém konci řetězce), dokud sám blok nevytěžil.
+   * To vede k plýtvání výpočetním výkonem a ve verzi 0.1.0 to v kombinaci s další logikou přispívá k zastavení mineru, místo aby se jen restartoval.
