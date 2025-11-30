@@ -19,7 +19,7 @@ ALLOW_EMPTY_BLOCKS = False
 
 Dochází k zastavení mineru v případě přijetí bloku od jiného uzlu, i když by i v takovém případě měl miner pokračovat dál v těžbě, dokud jsou transakce v mempoolu, nebo ho uživatel ručně neukončí pomocí kláves CTRL+C
 
-Logická chyba:
+Logická chyba v metodě mine:
 
 If self.get_last_block().hash != self.get_last_block().hash:
 
