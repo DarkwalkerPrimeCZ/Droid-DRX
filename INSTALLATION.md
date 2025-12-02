@@ -1,4 +1,4 @@
-# Instalace Droid (DRX) Alpha 0.1.0    
+# Instalace Droid (DRX) 0.1.0 Alpha 1
 
 ## Termux    
 
@@ -25,7 +25,7 @@ cd droid
 nano droid.py    
 ```    
 
-2. Otevři soubor `droid-drx-alpha-0.1.0.py` v programu Totalcmd-Editor (či ekvivalentu) a zkopíruj obsah do schránky.    
+2. Otevři soubor `droid-drx-0.1.0-alpha-1.py` v programu Totalcmd-Editor (či ekvivalentu) a zkopíruj obsah do schránky.    
 
 3. Podrž prst na obrazovce, klikni na **Paste** a ulož změny klávesami **CTRL-X → Y → Enter**.    
 
@@ -35,7 +35,11 @@ nano droid.py
 python droid.py    
 ```
 
-K propojení jednotlivých uzlů doporučuji použít VPN Tailscale, nebo ZeroTierOne, protože projekt zatím nemá implementované peer discovery, ani šifrování P2P komunikace.
+5. K propojení jednotlivých uzlů doporučuji použít VPN Tailscale, nebo ZeroTierOne, protože projekt zatím nemá implementované peer discovery, ani šifrování P2P komunikace.
+
+6. Pro zastavení mineru stiskni klávesy **CTRL+C**
+
+Poznámka: Stisknutí kláves **CTRL+C** v hlavním menu programu ukončí celý program, stejně jako klávesa 12 v hlavním menu programu.
    
 ---    
 
@@ -66,7 +70,7 @@ python be.py
 
 5. Otevři IP adresu Flask serveru ve svém webovém prohlížeči.    
 
-Pro ukončení Flask serveru stiskni **CTRL+C**.    
+6. Pro ukončení Flask serveru stiskni **CTRL+C**.    
 
 ---    
 
