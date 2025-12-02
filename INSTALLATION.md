@@ -1,4 +1,4 @@
-# Spuštění Droid (DRX) 0.1.0 Alpha 1
+Instalace Droid (DRX) 0.1.0 Alpha 1
 
 ## Termux    
 
